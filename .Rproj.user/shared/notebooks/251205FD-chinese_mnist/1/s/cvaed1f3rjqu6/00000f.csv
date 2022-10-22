@@ -1,9 +1,3 @@
-"0","# Change predictors to arrays"
-"0","train_x <- array_reshape(data_train_x, dim=dim(data_train_x))"
-"0","val_x <- array_reshape(data_val_x, dim=dim(data_val_x))"
-"0","test_x <- array_reshape(data_test_x, dim=dim(data_test_x))"
-"0",""
-"0","# One-hot encoding target variable"
-"0","train_y <- to_categorical(data_train_y)"
-"0","val_y <- to_categorical(data_val_y)"
-"0","test_y <- to_categorical(data_test_y)"
+version https://git-lfs.github.com/spec/v1
+oid sha256:b24c7b40a3724d9b4bb0edf6dd5e4aaaddca567a47b5fe24e89d8028d610c9f7
+size 411

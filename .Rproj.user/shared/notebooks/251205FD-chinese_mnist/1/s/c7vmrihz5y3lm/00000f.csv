@@ -1,17 +1,3 @@
-"0","data_train_x <- data_train %>% "
-"0","  select(-c(label,character,value)) %>% # take only the predictors"
-"0","  as.matrix()/255 # change the data type into matrix and do min-max scaling"
-"0",""
-"0","data_train_y <- data_train$label # take only the labels"
-"0",""
-"0","data_val_x <- data_val %>% "
-"0","  select(-c(label,character,value)) %>% "
-"0","  as.matrix()/255"
-"0",""
-"0","data_val_y <- data_val$label"
-"0",""
-"0","data_test_x <- data_test %>% "
-"0","  select(-c(label,character,value)) %>% "
-"0","  as.matrix()/255"
-"0",""
-"0","data_test_y <- data_test$label"
+version https://git-lfs.github.com/spec/v1
+oid sha256:701e017145231da02ab85971d134899554ac10b5ab195beaf864a32ae5f99f9e
+size 574

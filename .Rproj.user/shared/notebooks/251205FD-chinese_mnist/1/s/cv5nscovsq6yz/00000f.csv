@@ -1,1 +1,3 @@
-"0","chinese_mnist <- readRDS(""data-input/chinese_mnist.RDS"")"
+version https://git-lfs.github.com/spec/v1
+oid sha256:934e30fec88e2c99ac42fd8d36d81258a65644252ba9d707c41b07a0734e8f75
+size 65

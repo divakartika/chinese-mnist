@@ -1,2 +1,3 @@
-"0","input_dim <- ncol(train_x) # dimension of predictors"
-"0","num_class <- n_distinct(data_train$label)"
+version https://git-lfs.github.com/spec/v1
+oid sha256:e371595bb476b5825aae8ae0a5a42d0fe2a4b2773aa4dcf6231013bc0db9fa2b
+size 107

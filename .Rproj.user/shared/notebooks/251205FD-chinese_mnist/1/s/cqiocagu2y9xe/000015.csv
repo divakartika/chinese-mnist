@@ -1,3 +1,3 @@
-"0","model2 <- load_model_hdf5(""data-output/model2.h5"")"
-"0","history <- readRDS(""data-output/history2.RDS"")"
-"0","plot(history)"
+version https://git-lfs.github.com/spec/v1
+oid sha256:00896401eba679c8e91a31774ece4c0822e34e7e1c958b2106adb0b2eef479c5
+size 134
