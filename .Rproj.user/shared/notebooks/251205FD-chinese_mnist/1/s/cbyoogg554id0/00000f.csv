@@ -1,0 +1,2 @@
+"0","input_dim <- ncol(train_x)"
+"0","num_class <- n_distinct(data_train$label)"

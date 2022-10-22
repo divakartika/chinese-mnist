@@ -1,0 +1,99 @@
+---
+title: "Learn by Building: Neural Network"
+author: "Diva Kartika"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+    df_print: paged
+    highlight: haddock
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+# clear-up the environment
+rm(list = ls())
+
+# chunk options
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  fig.align = "center"
+)
+
+options(scipen = 9999)
+```
+
+![Shanghai, China](images/paste-C975F56E.png){width="80%"}
+
+# Introduction
+
+In this project, let's make a machine learning model that can classify Chinese number characters.
+
+![](images/chinese_mnist.png){width="74%"} ![](images/chinese_labels.png){width="21%"}
+
+```{r, echo=FALSE,out.width="90%", out.height="20%", fig.cap="caption", fig.show='hold', fig.align='center'}
+knitr::include_graphics(c("images/chinese_mnist.png","images/chinese_labels.png"))
+```
+
+The data consists of characters from 0 to 10, 100, 1000, 10000 (ten thousand), and 100000000 (a hundred million).
+
+```{r echo=FALSE, out.width="25%" }
+knitr::include_graphics("images/chinese_labels.png")
+```
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code.
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*.
+
+```{r}
+# comment
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+Image Data
+
+1.  A digital image consists of pixels or picture elements. According to Cambridge Dictionary, pixel is the smallest unit of an image in a digital platform. Each pixel contains a value, called--you guessed it--pixel value. A pixel value ranges between 0 to 255 describing its brightness or its color strength.
+
+<!-- -->
+
+    # Change predictors to arrays
+    train_x <- array_reshape(data_train_x, dim=c(dim(data_train_x)[1],64,64,1))
+    val_x <- array_reshape(data_val_x, dim=c(dim(data_val_x)[1],64,64,1))
+    test_x <- array_reshape(data_test_x, dim=c(dim(data_test_x)[1],64,64,1))
+
+```{r, out.width="25%"}
+knitr::include_graphics("https://1.cms.s81c.com/sites/default/files/2021-01-06/ICLH_Diagram_Batch_01_03-DeepNeuralNetwork-WHITEBG.png")
+```
+
+# Convolutional Neural Network
+
+Convolutional Neural Network (CNN) is a type of neural network that uses convolution layer. CNN is highly popular to be used for image data, as stated by IBM,
+
+> Convolutional neural networks are distinguished from other neural networks by their superior performance with image, speech, or audio signal inputs.
+
+A CNN typically consists of these layers.
+
+1.  Convolutional layer\
+    A convolution layer works by implementing a filter matrix towards the image matrix. It works by multiplying the pixels with the values in the filter. The filter then shifts until the entire value in the image matrix are multiplied.
+
+```{r, out.width="60%", echo=FALSE}
+knitr::include_graphics("https://1.cms.s81c.com/sites/default/files/2021-01-06/ICLH_Diagram_Batch_02_17A-ConvolutionalNeuralNetworks-WHITEBG.png")
+
+knitr::include_graphics("https://madewithml.com/static/images/foundations/cnn/convolution.gif")
+```
+
+2.  Pooling layer
+3.  Flatten layer
+
+```{r, out.width="60%", echo=FALSE}
+knitr::include_graphics("https://miro.medium.com/max/1400/1*6LEgDnjpbEhbvi3RrOuc6g.png")
+```

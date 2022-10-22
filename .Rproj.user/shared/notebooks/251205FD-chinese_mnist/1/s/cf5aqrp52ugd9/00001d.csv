@@ -1,0 +1,3 @@
+"0","model1 <- load_model_hdf5(""data-output/model1.h5"")"
+"0","history <- readRDS(""data-output/history1.RDS"")"
+"0","plot(history)"

@@ -1,0 +1,1 @@
+"0","chinese_mnist <- readRDS(""data-input/chinese_mnist.RDS"")"

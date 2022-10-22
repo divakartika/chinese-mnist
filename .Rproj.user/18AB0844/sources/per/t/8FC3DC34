@@ -1,0 +1,33 @@
+{
+    "id": "8FC3DC34",
+    "path": "I:/My Drive/Algoritma/projects/lbb-nn/trial.Rmd",
+    "project_path": null,
+    "type": "r_markdown",
+    "hash": "1065174739",
+    "contents": "",
+    "dirty": false,
+    "created": 1665140976407.0,
+    "source_on_save": true,
+    "relative_order": 2,
+    "properties": {
+        "tempName": "Untitled1",
+        "chunk_output_type": "inline",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "34,0",
+        "scrollLine": "0",
+        "rmdVisualMode": "false",
+        "rmdVisualWrapConfigured": "true",
+        "docOutlineVisible": "1",
+        "rmdVisualModeLocation": "572:240",
+        "rmdVisualCollapsedChunks": ""
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1665642177,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1665642177100,
+    "read_only": false,
+    "read_only_alternatives": []
+}

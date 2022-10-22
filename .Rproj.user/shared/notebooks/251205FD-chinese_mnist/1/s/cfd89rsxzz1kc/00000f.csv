@@ -1,0 +1,13 @@
+"0","chinese_mnist <- read.csv(""data-input/chineseMNIST.csv"") # main dataset"
+"0","chinese_meta <- read.csv(""data-input/chinese_mnist.csv"") # index (contains labels)"
+"0",""
+"0","# combine the metadata to the main dataset"
+"0","chinese_mnist$label <- chinese_meta$code"
+"0","chinese_mnist$value <- chinese_meta$value"
+"0",""
+"0","# rearrange the dataset so ""label"", ""value"", and ""character"" are the first two columns"
+"0","chinese_mnist <- chinese_mnist %>%"
+"0","  select(label, value, character, everything())"
+"2","Error in chinese_mnist %>% select(label, value, character, everything()) : 
+  could not find function ""%>%""
+"
